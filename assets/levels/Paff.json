@@ -1,0 +1,1777 @@
+{
+  "Name": "Paff",
+  "Gravity": 20,
+  "GameObjects": [
+    {
+      "Name": "Wall_1",
+      "Transform": {
+        "X": 750,
+        "Y": 200,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "CamZone_2",
+      "Transform": {
+        "X": 850,
+        "Y": 200,
+        "W": 800,
+        "H": 600
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CameraZone"
+        },
+        {
+          "Type": "COG_Sprite",
+          "IsVisible": false,
+          "LayerDepth": 0.2,
+          "Color": [
+            1,
+            1,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_3",
+      "Transform": {
+        "X": 1550,
+        "Y": 200,
+        "W": 50,
+        "H": 800
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_TriggerBehavior",
+          "TargetUid": "music",
+          "MessageToSend": "play",
+          "TriggerOnce": false
+        },
+        {
+          "Type": "COG_Sprite",
+          "IsVisible": false,
+          "LayerDepth": 0.2,
+          "Color": [
+            1,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "CamZone_4",
+      "Transform": {
+        "X": 1650,
+        "Y": 200,
+        "W": 800,
+        "H": 600
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CameraZone"
+        },
+        {
+          "Type": "COG_Sprite",
+          "IsVisible": false,
+          "LayerDepth": 0.2,
+          "Color": [
+            1,
+            1,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Trigger_5",
+      "Transform": {
+        "X": 1700,
+        "Y": 200,
+        "W": 50,
+        "H": 800
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_TriggerBehavior",
+          "TargetUid": "music",
+          "MessageToSend": "pause",
+          "TriggerOnce": false
+        },
+        {
+          "Type": "COG_Sprite",
+          "IsVisible": false,
+          "LayerDepth": 0.2,
+          "Color": [
+            1,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_6",
+      "Transform": {
+        "X": 2450,
+        "Y": 200,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_7",
+      "Transform": {
+        "X": 750,
+        "Y": 250,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_8",
+      "Transform": {
+        "X": 2450,
+        "Y": 250,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_9",
+      "Transform": {
+        "X": 750,
+        "Y": 300,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_10",
+      "Transform": {
+        "X": 2450,
+        "Y": 300,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_11",
+      "Transform": {
+        "X": 750,
+        "Y": 350,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_12",
+      "Transform": {
+        "X": 2450,
+        "Y": 350,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_13",
+      "Transform": {
+        "X": 750,
+        "Y": 400,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_14",
+      "Transform": {
+        "X": 2450,
+        "Y": 400,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_15",
+      "Transform": {
+        "X": 750,
+        "Y": 450,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_16",
+      "Transform": {
+        "X": 900,
+        "Y": 450,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_17",
+      "Transform": {
+        "X": 950,
+        "Y": 450,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_18",
+      "Transform": {
+        "X": 1000,
+        "Y": 450,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_19",
+      "Transform": {
+        "X": 2450,
+        "Y": 450,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_20",
+      "Transform": {
+        "X": 750,
+        "Y": 500,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_21",
+      "Transform": {
+        "X": 900,
+        "Y": 500,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_22",
+      "Transform": {
+        "X": 950,
+        "Y": 500,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_23",
+      "Transform": {
+        "X": 1000,
+        "Y": 500,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "AudioSource_24",
+      "Transform": {
+        "X": 1150,
+        "Y": 500,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_AudioSource",
+          "OggPath": "assets/tracks/track.ogg",
+          "Volume": 0.7,
+          "PlayOnAwake": true,
+          "Loop": true
+        }
+      ],
+      "Uid": "music"
+    },
+    {
+      "Name": "Wall_25",
+      "Transform": {
+        "X": 2450,
+        "Y": 500,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_26",
+      "Transform": {
+        "X": 750,
+        "Y": 550,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_27",
+      "Transform": {
+        "X": 900,
+        "Y": 550,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_28",
+      "Transform": {
+        "X": 950,
+        "Y": 550,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_29",
+      "Transform": {
+        "X": 1000,
+        "Y": 550,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_30",
+      "Transform": {
+        "X": 2450,
+        "Y": 550,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_31",
+      "Transform": {
+        "X": 750,
+        "Y": 600,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Ice_32",
+      "Transform": {
+        "X": 1400,
+        "Y": 600,
+        "W": 500,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0,
+            0.125
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_33",
+      "Transform": {
+        "X": 2450,
+        "Y": 600,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_34",
+      "Transform": {
+        "X": 750,
+        "Y": 650,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_35",
+      "Transform": {
+        "X": 2450,
+        "Y": 650,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_36",
+      "Transform": {
+        "X": 750,
+        "Y": 700,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Player",
+      "Transform": {
+        "X": 1100,
+        "Y": 700,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_PlayerController",
+          "Speed": 8,
+          "JumpImpulse": 15
+        },
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0,
+          "BodyType": "Dynamic",
+          "Shape": "PlayerBox"
+        },
+        {
+          "Type": "COG_RopeClimber"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.5,
+          "AtlasOffset": [
+            0.5,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_38",
+      "Transform": {
+        "X": 2000,
+        "Y": 700,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_39",
+      "Transform": {
+        "X": 2050,
+        "Y": 700,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_40",
+      "Transform": {
+        "X": 2100,
+        "Y": 700,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_41",
+      "Transform": {
+        "X": 2150,
+        "Y": 700,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_42",
+      "Transform": {
+        "X": 2200,
+        "Y": 700,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Coin_43",
+      "Transform": {
+        "X": 2250,
+        "Y": 700,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": false,
+          "IsTrigger": true,
+          "BodyType": "Static"
+        },
+        {
+          "Type": "COG_CoinBehavior"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.4,
+          "AtlasOffset": [
+            0,
+            0.25
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "SlopeRight_44",
+      "Transform": {
+        "X": 2400,
+        "Y": 700,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "SlopeRight"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Simple",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.25,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_45",
+      "Transform": {
+        "X": 2450,
+        "Y": 700,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_46",
+      "Transform": {
+        "X": 750,
+        "Y": 750,
+        "W": 100,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Bouncy_47",
+      "Transform": {
+        "X": 850,
+        "Y": 750,
+        "W": 200,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 1.2,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.625,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "IceSlopeLeft_48",
+      "Transform": {
+        "X": 1050,
+        "Y": 750,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "SlopeLeft"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Simple",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.375,
+            0.125
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "SlopeRight_49",
+      "Transform": {
+        "X": 2350,
+        "Y": 750,
+        "W": 50,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "SlopeRight"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Simple",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.25,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_50",
+      "Transform": {
+        "X": 2400,
+        "Y": 750,
+        "W": 150,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_51",
+      "Transform": {
+        "X": 750,
+        "Y": 800,
+        "W": 1800,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_52",
+      "Transform": {
+        "X": 750,
+        "Y": 850,
+        "W": 1800,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wall_53",
+      "Transform": {
+        "X": 750,
+        "Y": 900,
+        "W": 1800,
+        "H": 50
+      },
+      "Components": [
+        {
+          "Type": "COG_Collider",
+          "IsSolid": true,
+          "Friction": 0.1,
+          "Restitution": 0,
+          "BodyType": "Static",
+          "Shape": "Rectangle"
+        },
+        {
+          "Type": "COG_Sprite",
+          "TexturePath": "atlas.png",
+          "LayerDepth": 0.6,
+          "MatType": "Stretch",
+          "TextureBaseSize": 50,
+          "AtlasOffset": [
+            0.125,
+            0
+          ],
+          "AtlasSize": [
+            0.125,
+            0.125
+          ]
+        }
+      ]
+    }
+  ]
+}
