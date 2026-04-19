@@ -6,37 +6,27 @@ async function startApp() {
             .withDiagnosticTracing(false)
             .create();
 
-        // On force le canvas pour Emscripten / EGL
         const canvasElement = document.getElementById('canvas');
         dotnet.instance.Module["canvas"] = canvasElement;
 
-        // --- LA MAGIE EST ICI : On récupère les fonctions C# [JSExport] ---
         const exports = await getAssemblyExports(getConfig().mainAssemblyName);
-        const interop = exports.Interop; // Si tu as mis un namespace, ce serait exports.TonNamespace.Interop
+        const interop = exports.Interop;
 
         function resizeCanvas() {
-            // On prend la taille définie par ton CSS (800x600) multipliée par le zoom de l'écran
             const ratio = window.devicePixelRatio || 1.0;
             const displayWidth = canvasElement.clientWidth * ratio;
             const displayHeight = canvasElement.clientHeight * ratio;
 
-            // On met à jour les pixels internes
             if (canvasElement.width !== displayWidth || canvasElement.height !== displayHeight) {
                 canvasElement.width = displayWidth;
                 canvasElement.height = displayHeight;
             }
-
-            // On envoie cette bonne taille au C#
             interop.OnCanvasResize(displayWidth, displayHeight, ratio);
         }
 
-        // 1. Redimensionnement de la fenêtre
         window.addEventListener('resize', resizeCanvas);
 
-        // 2. Mouvements et clics de la souris
         canvasElement.addEventListener('mousemove', (e) => {
-            // offsetX/Y donne la position relative au canvas (et non à l'écran)
-            // On multiplie par le ratio pour correspondre aux vrais pixels internes du jeu
             const ratio = window.devicePixelRatio || 1.0;
             interop.OnMouseMove(e.offsetX * ratio, e.offsetY * ratio);
         });
@@ -48,7 +38,6 @@ async function startApp() {
             interop.OnMouseUp(e.shiftKey, e.ctrlKey, e.altKey, e.button);
         });
 
-        // 3. Clavier
         window.addEventListener('keydown', (e) => {
             interop.OnKeyDown(e.code);
         });
@@ -56,15 +45,34 @@ async function startApp() {
             interop.OnKeyUp(e.code);
         });
 
-        // Désactiver le clic droit du navigateur
         canvasElement.addEventListener('contextmenu', e => e.preventDefault());
 
-        // On appelle le resize une première fois pour initialiser la bonne taille
         resizeCanvas();
 
-        // On lance le jeu
         const loading = document.getElementById('loading');
         if (loading) loading.style.display = 'none';
+
+        // =========================================================
+        // ðŸš€ NOUVEAU : SYSTÃˆME DE COMMUNICATION IFRAME <-> SERVEUR
+        // =========================================================
+
+        // 1. Ã‰couter les requÃªtes venant de ta page PHP
+        window.addEventListener('message', (event) => {
+            // (En prod, remplace "*" par "https://ton-serveur.com" pour la sÃ©curitÃ©)
+            if (event.data && event.data.type === 'LOAD_LEVEL') {
+                console.log("[WASM] JSON du niveau reÃ§u depuis le PHP ! Envoi au moteur C#...");
+                interop.LoadLevelFromWeb(event.data.data);
+            }
+        });
+
+        // 2. Signaler Ã  la page PHP que le moteur est prÃªt Ã  jouer
+        if (window.parent !== window) { 
+            console.log("[WASM] Moteur prÃªt. Envoi du signal GAME_READY au PHP...");
+            window.parent.postMessage({ type: 'GAME_READY' }, "*");
+        }
+        // =========================================================
+
+        // On lance la boucle C#
         await runMain();
 
     } catch (err) {
@@ -72,20 +80,20 @@ async function startApp() {
     }
 }
 /*
-// --- SYSTÈME DE COMPTEUR FPS INDÉPENDANT ---
+// --- SYSTÃˆME DE COMPTEUR FPS INDÃ‰PENDANT ---
 const fpsElement = document.getElementById('fpsCounter');
 let lastFpsTime = performance.now();
 let frames = 0;
 
 function measureFPS(currentTime) {
     frames++;
-    // Si une seconde (1000 ms) s'est écoulée
+    // Si une seconde (1000 ms) s'est Ã©coulÃ©e
     if (currentTime - lastFpsTime >= 1000) {
         if (fpsElement) fpsElement.innerText = `FPS: ${frames}`;
-        frames = 0; // On remet le compteur à zéro
+        frames = 0; // On remet le compteur Ã  zÃ©ro
         lastFpsTime = currentTime;
     }
-    // On reboucle à l'infini à la vitesse de rafraîchissement de l'écran
+    // On reboucle Ã  l'infini Ã  la vitesse de rafraÃ®chissement de l'Ã©cran
     requestAnimationFrame(measureFPS);
 }
 // On lance la boucle
@@ -102,8 +110,8 @@ window.GameAudio = {
         audio.loop = loop;
         audio.volume = volume;
 
-        // Les navigateurs bloquent parfois l'audio si le joueur n'a pas encore cliqué
-        audio.play().catch(e => console.warn("[AUDIO] Lecture bloquée par le navigateur (interaction requise) :", e));
+        // Les navigateurs bloquent parfois l'audio si le joueur n'a pas encore cliquÃ©
+        audio.play().catch(e => console.warn("[AUDIO] Lecture bloquÃ©e par le navigateur (interaction requise) :", e));
     },
 
     pause: function (id) {
@@ -113,7 +121,7 @@ window.GameAudio = {
     stop: function (id) {
         if (this.sounds[id]) {
             this.sounds[id].pause();
-            this.sounds[id].currentTime = 0; // Remet à zéro
+            this.sounds[id].currentTime = 0; // Remet Ã  zÃ©ro
         }
     },
 
