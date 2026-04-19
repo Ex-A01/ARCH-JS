@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TestRenderer.dll",
   "resources": {
-    "hash": "sha256-3X2dUTCD5JRe56S9QJu9GFCVMgUL0UnmL6FgXkp6G5Q=",
+    "hash": "sha256-Zdx6Cg3VWnSM4v58TAOYNc+e8b5mZw6S9Ytj2ojarS4=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ZBVPcYkmJaYd+vPSgPm6uWb5AqlyLl4+5v5LvW3ICzA="
     },
@@ -200,20 +200,20 @@
       "mscorlib.wasm": "sha256-rGm+fePHcRdNKLvNvl2ALv504HZc6ufZZqaXcOLo8HQ=",
       "netstandard.wasm": "sha256-j+YhS0xT+ZUStadRqdIFX5q3MfD09IJhCcEkJ3y3Kh0=",
       "System.Private.CoreLib.wasm": "sha256-kBctNlE4dRKf2skTHn0v97OexfJRw4dlYh5Coquf9h4=",
-      "TestRenderer.wasm": "sha256-3Dh00e1GUS/ejqHJi2wax5H/IPXJsKE13mzH6HVAS9I="
+      "TestRenderer.wasm": "sha256-B5mrcOtd4BUr3N2YtSJ7MzD1ngpzRSjJ8H1fwAgDBu0="
     },
     "assembly": {},
     "corePdb": {
-      "TestRenderer.pdb": "sha256-+Oo4cEuXUemiG4y2XWkGGsjNyfVg0Z/VTpOKiZFHako="
+      "TestRenderer.pdb": "sha256-p1w0m8ASVukXHo26HICpjsCvsajXjtx1E9GpN8UHnk4="
     },
     "coreVfs": {
       "runtimeconfig.bin": {
-        "supportFiles/7_runtimeconfig.bin": "sha256-ZceXvOSupgIV05WpWbrEi10JZbGp7KLI/CysBdSpoFQ="
+        "supportFiles/9_runtimeconfig.bin": "sha256-ZceXvOSupgIV05WpWbrEi10JZbGp7KLI/CysBdSpoFQ="
       }
     },
     "vfs": {
       "assets/atlas.png": {
-        "supportFiles/0_atlas.png": "sha256-j0RjlyFQukatygLQP3IWJBAraApnTJ1MZLZ8D6VVEVg="
+        "supportFiles/0_atlas.png": "sha256-diH4xpqVO+bfoUcAjMJk915nOhMGBXFuNMpwyQU8fOk="
       },
       "assets/base.frag": {
         "supportFiles/1_base.frag": "sha256-BclPvy5d9NjWbixn1QVRtj4McJcDDIpll44vH6pJlNI="
@@ -224,14 +224,20 @@
       "assets/levels/Paff.json": {
         "supportFiles/3_Paff.json": "sha256-HAIsi87jDKNIecrEro82ArE+7jgBg2lAAPOOYIiURI0="
       },
+      "assets/levels/PaffVolant.json": {
+        "supportFiles/4_PaffVolant.json": "sha256-lB3lSnyIPMla5L0UOX7aimoz4bYy12lcrC8zXbvSinY="
+      },
+      "assets/levels/TestAnims.json": {
+        "supportFiles/5_TestAnims.json": "sha256-3jTWflXStpD6N2SQiXCJ4TUjsWwrfJihZFJbgmadeDU="
+      },
       "assets/pixel.png": {
-        "supportFiles/4_pixel.png": "sha256-SSc0nsh4iNI99dF0nnMfRjPPgxlBlE12EIjkHB584oU="
+        "supportFiles/6_pixel.png": "sha256-SSc0nsh4iNI99dF0nnMfRjPPgxlBlE12EIjkHB584oU="
       },
       "assets/terrain.png": {
-        "supportFiles/5_terrain.png": "sha256-njIzbINzIZOiDQ+UKuiqEYauASMSRbXoNlnObp01Ec8="
+        "supportFiles/7_terrain.png": "sha256-njIzbINzIZOiDQ+UKuiqEYauASMSRbXoNlnObp01Ec8="
       },
       "assets/tracks/track.ogg": {
-        "supportFiles/6_track.ogg": "sha256-9vRXDpJS3Li2m8Lb7pDHc0WwvhtX8h//rPN8P6nIZB8="
+        "supportFiles/8_track.ogg": "sha256-9vRXDpJS3Li2m8Lb7pDHc0WwvhtX8h//rPN8P6nIZB8="
       }
     }
   },
