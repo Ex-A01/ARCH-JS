@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TestRenderer.dll",
   "resources": {
-    "hash": "sha256-9id89kcvGK9cYGpx3LfAo1i7FqTZUPA1OvFILSW1riw=",
+    "hash": "sha256-Vl5rD0IDdq1S7AX173XG3qdH4J1CUrY+t6tjzbly7ek=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ScIs1f9WHcD3vcs3o4lCuXo6tb9VxRMLYNprTnjhc34="
     },
@@ -200,11 +200,11 @@
       "mscorlib.wasm": "sha256-rGm+fePHcRdNKLvNvl2ALv504HZc6ufZZqaXcOLo8HQ=",
       "netstandard.wasm": "sha256-j+YhS0xT+ZUStadRqdIFX5q3MfD09IJhCcEkJ3y3Kh0=",
       "System.Private.CoreLib.wasm": "sha256-kBctNlE4dRKf2skTHn0v97OexfJRw4dlYh5Coquf9h4=",
-      "TestRenderer.wasm": "sha256-B+xisZz/FC1aelRvY4JV25W1jAZ+0rvOTbDksYGMvhA="
+      "TestRenderer.wasm": "sha256-HHNJoKHP1cGPpQWflB1ErvOmdytsXH7FITux2WP9Rs0="
     },
     "assembly": {},
     "corePdb": {
-      "TestRenderer.pdb": "sha256-/SZXv5RZRea56PoKxXyJdmK4g61/8/JUICgGWz1aj7E="
+      "TestRenderer.pdb": "sha256-FwWABBTs263Ay9uHiMqwSLcklB3OzIiPeiiG+63Y/U4="
     },
     "coreVfs": {
       "runtimeconfig.bin": {
