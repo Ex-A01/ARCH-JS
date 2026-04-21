@@ -1,15 +1,15 @@
 {
   "mainAssemblyName": "TestRenderer.dll",
   "resources": {
-    "hash": "sha256-Zdx6Cg3VWnSM4v58TAOYNc+e8b5mZw6S9Ytj2ojarS4=",
+    "hash": "sha256-9id89kcvGK9cYGpx3LfAo1i7FqTZUPA1OvFILSW1riw=",
     "jsModuleNative": {
-      "dotnet.native.js": "sha256-ZBVPcYkmJaYd+vPSgPm6uWb5AqlyLl4+5v5LvW3ICzA="
+      "dotnet.native.js": "sha256-ScIs1f9WHcD3vcs3o4lCuXo6tb9VxRMLYNprTnjhc34="
     },
     "jsModuleRuntime": {
       "dotnet.runtime.js": "sha256-5oRcSUQSLbUYyq9jPgwB6domrDHYrvLX+53QxY+0y48="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-XtQVemJ3qg+sj6US+R1BbqpkVIPEFGLQMnEtt576Nc0="
+      "dotnet.native.wasm": "sha256-Ooxf/myswHwyBHv+8uQx//ETJfeIBCUsYqkrp1TvAS0="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -200,15 +200,15 @@
       "mscorlib.wasm": "sha256-rGm+fePHcRdNKLvNvl2ALv504HZc6ufZZqaXcOLo8HQ=",
       "netstandard.wasm": "sha256-j+YhS0xT+ZUStadRqdIFX5q3MfD09IJhCcEkJ3y3Kh0=",
       "System.Private.CoreLib.wasm": "sha256-kBctNlE4dRKf2skTHn0v97OexfJRw4dlYh5Coquf9h4=",
-      "TestRenderer.wasm": "sha256-B5mrcOtd4BUr3N2YtSJ7MzD1ngpzRSjJ8H1fwAgDBu0="
+      "TestRenderer.wasm": "sha256-B+xisZz/FC1aelRvY4JV25W1jAZ+0rvOTbDksYGMvhA="
     },
     "assembly": {},
     "corePdb": {
-      "TestRenderer.pdb": "sha256-p1w0m8ASVukXHo26HICpjsCvsajXjtx1E9GpN8UHnk4="
+      "TestRenderer.pdb": "sha256-/SZXv5RZRea56PoKxXyJdmK4g61/8/JUICgGWz1aj7E="
     },
     "coreVfs": {
       "runtimeconfig.bin": {
-        "supportFiles/9_runtimeconfig.bin": "sha256-ZceXvOSupgIV05WpWbrEi10JZbGp7KLI/CysBdSpoFQ="
+        "supportFiles/12_runtimeconfig.bin": "sha256-63lTjEq7V2H7TCA4Eljv8JdkytihvlY7l95GmsQHC7k="
       }
     },
     "vfs": {
@@ -233,11 +233,20 @@
       "assets/pixel.png": {
         "supportFiles/6_pixel.png": "sha256-SSc0nsh4iNI99dF0nnMfRjPPgxlBlE12EIjkHB584oU="
       },
+      "assets/sky1.png": {
+        "supportFiles/7_sky1.png": "sha256-GfnDQpmR7DFTuONvKhNYEirmqhmi2DqHaz3YpPbsyd8="
+      },
+      "assets/sky2.png": {
+        "supportFiles/8_sky2.png": "sha256-LNujbHigk7ryCJg27JLz9eLYGtPUahlN2Nr2lYDq67U="
+      },
+      "assets/sky3.png": {
+        "supportFiles/9_sky3.png": "sha256-wmmrFep5l+LCezMhzwkJeQKWAcI2aLMRfWVHXzH4sJg="
+      },
       "assets/terrain.png": {
-        "supportFiles/7_terrain.png": "sha256-njIzbINzIZOiDQ+UKuiqEYauASMSRbXoNlnObp01Ec8="
+        "supportFiles/10_terrain.png": "sha256-njIzbINzIZOiDQ+UKuiqEYauASMSRbXoNlnObp01Ec8="
       },
       "assets/tracks/track.ogg": {
-        "supportFiles/8_track.ogg": "sha256-9vRXDpJS3Li2m8Lb7pDHc0WwvhtX8h//rPN8P6nIZB8="
+        "supportFiles/11_track.ogg": "sha256-9vRXDpJS3Li2m8Lb7pDHc0WwvhtX8h//rPN8P6nIZB8="
       }
     }
   },
