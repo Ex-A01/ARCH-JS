@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TestRenderer.dll",
   "resources": {
-    "hash": "sha256-Vl5rD0IDdq1S7AX173XG3qdH4J1CUrY+t6tjzbly7ek=",
+    "hash": "sha256-exk+NweeWrGNRyGjPfj1tCChAlGYzFWZF0tnc0TUTxU=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ScIs1f9WHcD3vcs3o4lCuXo6tb9VxRMLYNprTnjhc34="
     },
@@ -18,7 +18,6 @@
     },
     "coreAssembly": {
       "Aether.Physics2D.wasm": "sha256-Y/SGhnxc5drY3RUcNuCND5lWmYWOJ4Q1eCUYlJy50qI=",
-      "MeltySynth.wasm": "sha256-b18FsmWFVgq9bxgg0aM6cH4w2rYvo1BnOVIQCzxWD/w=",
       "Microsoft.DotNet.PlatformAbstractions.wasm": "sha256-vuy0PEP5Y03VwqnW7mcWCZeEkWVF2oQ48eOl2xTmeK4=",
       "Microsoft.Extensions.DependencyModel.wasm": "sha256-zz9pynf4bORf2ZrASANESdn72n1TwzdRKeXUSegfMH8=",
       "Silk.NET.Core.wasm": "sha256-e+yIBiy44456M05/pJf0QcNsXDNKHnoH9jDr21ir4Vs=",
@@ -200,20 +199,20 @@
       "mscorlib.wasm": "sha256-rGm+fePHcRdNKLvNvl2ALv504HZc6ufZZqaXcOLo8HQ=",
       "netstandard.wasm": "sha256-j+YhS0xT+ZUStadRqdIFX5q3MfD09IJhCcEkJ3y3Kh0=",
       "System.Private.CoreLib.wasm": "sha256-kBctNlE4dRKf2skTHn0v97OexfJRw4dlYh5Coquf9h4=",
-      "TestRenderer.wasm": "sha256-HHNJoKHP1cGPpQWflB1ErvOmdytsXH7FITux2WP9Rs0="
+      "TestRenderer.wasm": "sha256-mejxu6TgEnwzZ/0kBnekDNU2hH8vybcTTWPKUMuz5zY="
     },
     "assembly": {},
     "corePdb": {
-      "TestRenderer.pdb": "sha256-FwWABBTs263Ay9uHiMqwSLcklB3OzIiPeiiG+63Y/U4="
+      "TestRenderer.pdb": "sha256-3VCf+UGmHcS439f8PyRV2f9qZ8dcqqQAnWo+s85f0nw="
     },
     "coreVfs": {
       "runtimeconfig.bin": {
-        "supportFiles/12_runtimeconfig.bin": "sha256-63lTjEq7V2H7TCA4Eljv8JdkytihvlY7l95GmsQHC7k="
+        "supportFiles/14_runtimeconfig.bin": "sha256-63lTjEq7V2H7TCA4Eljv8JdkytihvlY7l95GmsQHC7k="
       }
     },
     "vfs": {
       "assets/atlas.png": {
-        "supportFiles/0_atlas.png": "sha256-diH4xpqVO+bfoUcAjMJk915nOhMGBXFuNMpwyQU8fOk="
+        "supportFiles/0_atlas.png": "sha256-bV7pPYhsWvyfUI2W+fk7loeBOzVk/yl8/fEFQ8uJEPQ="
       },
       "assets/base.frag": {
         "supportFiles/1_base.frag": "sha256-BclPvy5d9NjWbixn1QVRtj4McJcDDIpll44vH6pJlNI="
@@ -227,26 +226,32 @@
       "assets/levels/PaffVolant.json": {
         "supportFiles/4_PaffVolant.json": "sha256-lB3lSnyIPMla5L0UOX7aimoz4bYy12lcrC8zXbvSinY="
       },
+      "assets/levels/Test.json": {
+        "supportFiles/5_Test.json": "sha256-DAWOBmG+HVOb9T1zBlh8ozv7voGOpAX1wTlLscl+OZI="
+      },
       "assets/levels/TestAnims.json": {
-        "supportFiles/5_TestAnims.json": "sha256-3jTWflXStpD6N2SQiXCJ4TUjsWwrfJihZFJbgmadeDU="
+        "supportFiles/6_TestAnims.json": "sha256-3jTWflXStpD6N2SQiXCJ4TUjsWwrfJihZFJbgmadeDU="
       },
       "assets/pixel.png": {
-        "supportFiles/6_pixel.png": "sha256-SSc0nsh4iNI99dF0nnMfRjPPgxlBlE12EIjkHB584oU="
+        "supportFiles/7_pixel.png": "sha256-SSc0nsh4iNI99dF0nnMfRjPPgxlBlE12EIjkHB584oU="
       },
       "assets/sky1.png": {
-        "supportFiles/7_sky1.png": "sha256-GfnDQpmR7DFTuONvKhNYEirmqhmi2DqHaz3YpPbsyd8="
+        "supportFiles/8_sky1.png": "sha256-GfnDQpmR7DFTuONvKhNYEirmqhmi2DqHaz3YpPbsyd8="
       },
       "assets/sky2.png": {
-        "supportFiles/8_sky2.png": "sha256-LNujbHigk7ryCJg27JLz9eLYGtPUahlN2Nr2lYDq67U="
+        "supportFiles/9_sky2.png": "sha256-LNujbHigk7ryCJg27JLz9eLYGtPUahlN2Nr2lYDq67U="
       },
       "assets/sky3.png": {
-        "supportFiles/9_sky3.png": "sha256-wmmrFep5l+LCezMhzwkJeQKWAcI2aLMRfWVHXzH4sJg="
+        "supportFiles/10_sky3.png": "sha256-wmmrFep5l+LCezMhzwkJeQKWAcI2aLMRfWVHXzH4sJg="
+      },
+      "assets/Sprite-0001.png": {
+        "supportFiles/11_Sprite-0001.png": "sha256-gs3KZqAYWHfiBS0ZbhIJUVwf206POq00T6BW+iMa5uY="
       },
       "assets/terrain.png": {
-        "supportFiles/10_terrain.png": "sha256-njIzbINzIZOiDQ+UKuiqEYauASMSRbXoNlnObp01Ec8="
+        "supportFiles/12_terrain.png": "sha256-njIzbINzIZOiDQ+UKuiqEYauASMSRbXoNlnObp01Ec8="
       },
       "assets/tracks/track.ogg": {
-        "supportFiles/11_track.ogg": "sha256-9vRXDpJS3Li2m8Lb7pDHc0WwvhtX8h//rPN8P6nIZB8="
+        "supportFiles/13_track.ogg": "sha256-9vRXDpJS3Li2m8Lb7pDHc0WwvhtX8h//rPN8P6nIZB8="
       }
     }
   },
