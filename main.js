@@ -65,6 +65,16 @@ async function startApp() {
             }
         });
 
+        globalThis.onLevelFinished = (coinCount) => {
+            console.log("[Iframe] Fin du niveau ! Envoi au parent...");
+    
+            // On envoie un message à la page parente (ton site PHP)
+            window.parent.postMessage({
+            type: 'LEVEL_FINISHED',
+            coins: coinCount
+            }, "*"); // Idéalement, remplace "*" par l'URL de ton site web pour plus de sécurité
+        };
+        
         // 2. Signaler à la page PHP que le moteur est prêt à jouer
         if (window.parent !== window) { 
             console.log("[WASM] Moteur prêt. Envoi du signal GAME_READY au PHP...");
