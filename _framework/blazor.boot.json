@@ -199,7 +199,7 @@
       "mscorlib.wasm": "sha256-rGm+fePHcRdNKLvNvl2ALv504HZc6ufZZqaXcOLo8HQ=",
       "netstandard.wasm": "sha256-j+YhS0xT+ZUStadRqdIFX5q3MfD09IJhCcEkJ3y3Kh0=",
       "System.Private.CoreLib.wasm": "sha256-kBctNlE4dRKf2skTHn0v97OexfJRw4dlYh5Coquf9h4=",
-      "TestRenderer.wasm": "sha256-mejxu6TgEnwzZ/0kBnekDNU2hH8vybcTTWPKUMuz5zY="
+      "TestRenderer.wasm": "sha256-akBKT9vn1QHmaF0Y9RmHe2xH8RTGJRU98UWztmvDsiA="
     },
     "assembly": {},
     "corePdb": {
