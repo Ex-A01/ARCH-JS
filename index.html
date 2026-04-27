@@ -25,17 +25,55 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
-        #loading {
+        /* --- ECRAN DE CHARGEMENT --- */
+        #loading-overlay {
             position: absolute;
-            font-size: 24px;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 100; /* Maintient l'écran de chargement au-dessus du jeu */
+            overflow: hidden;
+            transition: opacity 0.5s ease-out; /* Pour une disparition en douceur à la fin */
         }
+
+        #loading-text {
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        /* Animation de l'oiseau */
+        #bird {
+            width: 100px; /* Ajustez la taille de rachid.png ici */
+            height: auto;
+            /* L'animation dure 4 secondes, est linéaire (vitesse constante) et boucle à l'infini */
+            animation: fly 4s linear infinite; 
+        }
+
+        /* Trajectoire de l'oiseau */
+        @keyframes fly {
+            0% { transform: translateX(-40vw) scaleX(1); } /* Part de la gauche */
+            49.9% { transform: translateX(40vw) scaleX(1); } /* Arrive à droite */
+            50% { transform: translateX(40vw) scaleX(-1); } /* Se retourne (effet miroir) */
+            99.9% { transform: translateX(-40vw) scaleX(-1); } /* Revient à gauche */
+            100% { transform: translateX(-40vw) scaleX(1); } /* Se remet à l'endroit */
+        }
+        
     </style>
 </head>
 <body>
-    <div id="loading">Chargement du moteur Wasm...</div>
+    <div id="loading-overlay">
+        <img id="bird" src="rachid.png" alt="Oiseau en vol">
+        <div id="loading-text">Chargement du moteur Wasm...</div>
+    </div>
 
     <div id="fpsCounter" style="position: absolute; top: 10px; left: 10px; color: lime; font-family: monospace; font-size: 20px; font-weight: bold; z-index: 10; pointer-events: none; text-shadow: 2px 2px 0px black;">
-        FPS: 0
+        
     </div>
 
     <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
