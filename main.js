@@ -49,7 +49,7 @@ async function startApp() {
 
         resizeCanvas();
 
-        const loading = document.getElementById('loading');
+        const loading = document.getElementById('loading-overlay');
         if (loading) loading.style.display = 'none';
 
         // =========================================================
